@@ -1,5 +1,4 @@
 name: GitHub Actions Demo
-secrets.LINE_ACCESS_TOKEN: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
 on: [push]
 jobs:
   Explore-GitHub-Actions: #! ชื่อ job
@@ -8,5 +7,5 @@ jobs:
       - run: echo "🎉 Hello Ksukong"
       - uses: snow-actions/line-notify@v1.0.0
         with:
-          access_token: ${{ secrets.LINE_ACCESS_TOKEN }}
+          access_token: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
           message: Ksukong ส่งงานแล้ว
