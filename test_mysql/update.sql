@@ -1,0 +1,1 @@
+UPDATE product SET name = 'มะนาว',price = 100 WHERE id= 2;

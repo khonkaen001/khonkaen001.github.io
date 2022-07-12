@@ -1,0 +1,1 @@
+INSERT INTO product (id,name,price) VALUES (2,'มะม่วง',15)
