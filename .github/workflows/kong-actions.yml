@@ -1,11 +1,21 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  Explore-GitHub-Actions: #! ชื่อ job
+  S-job: #! ชื่อ job
     runs-on: ubuntu-latest #! os ที่ใช้งาน
     steps:
-      - run: echo "🎉 Hello Ksukong"
-      - uses: snow-actions/line-notify@v1.0.0
-        with:
+      - run: echo "🎉 Hello Ksukong" #? เป็นคำสั่งที่อยู่ใน os บรรทัดที่ 5
+      - uses: snow-actions/line-notify@v1.0.0 #? lib ของไลน์
+        with: # ? ตัวแปรที่ต้องส่ง
           access_token: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
-          message: Ksukong ส่งงานแล้ว
+          message: เสียปลั๊กไฟ
+
+    S-job2: #! ชื่อ job
+    runs-on: ubuntu-latest #! os ที่ใช้งาน
+    needs: S-job
+    steps:
+      - run: echo "🎉 Hello Ksukong" #? เป็นคำสั่งที่อยู่ใน os บรรทัดที่ 5
+      - uses: snow-actions/line-notify@v1.0.0 #? lib ของไลน์
+        with: # ? ตัวแปรที่ต้องส่ง
+          access_token: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
+          message: เลือกเบอร์ของพัดลม
