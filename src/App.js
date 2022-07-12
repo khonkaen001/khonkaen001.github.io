@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import "./App.css";
+import Board from "./Board";
+import Moddata from "./Moddata";
+import Todolist from "./Todolist";
+import Todolistoption from "./Todolistoption";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Admin from "./Admin";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Todolist />} />
+        <Route path="/x" element={<Moddata />} />
+        <Route path="/todooption" element={<Todolistoption />} />
+        <Route path="/admin" element={<Admin />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

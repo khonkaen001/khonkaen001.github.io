@@ -1,0 +1,9 @@
+# ! link sever
+@url = https://notify-api.line.me/api/notify
+
+# ?method
+POST {{url}}
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
+
+message="Hello Ksukong"
