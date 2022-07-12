@@ -1,7 +1,12 @@
 name: GitHub Actions Demo
+secrets.LINE_ACCESS_TOKEN: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
 on: [push]
 jobs:
   Explore-GitHub-Actions: #! ชื่อ job
     runs-on: ubuntu-latest #! os ที่ใช้งาน
     steps:
       - run: echo "🎉 Hello Ksukong"
+      - uses: snow-actions/line-notify@v1.0.0
+        with:
+          access_token: ${{ secrets.LINE_ACCESS_TOKEN }}
+          message: Ksukong ส่งงานแล้ว
