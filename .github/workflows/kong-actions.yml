@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  S-job: #! ชื่อ job
+  job: #! ชื่อ job
     runs-on: ubuntu-latest #! os ที่ใช้งาน
     steps:
       - run: echo "🎉 Hello Ksukong" #? เป็นคำสั่งที่อยู่ใน os บรรทัดที่ 5
@@ -10,7 +10,7 @@ jobs:
           access_token: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
           message: เสียปลั๊กไฟ
 
-    S-job2: #! ชื่อ job
+  job2: #! ชื่อ job
     runs-on: ubuntu-latest #! os ที่ใช้งาน
     needs: S-job
     steps:
