@@ -29,7 +29,7 @@ const Board = (props) => {
 
   const [number, setNumber] = useState(0);
   const [board, setBoard] = useState([]);
-  const [loading,setLoading] =useState()
+  const [loading, setLoading] = useState();
   const [initial, setInitial] = useState([
     [true, true, true, true],
     [true, true, false, false],
@@ -95,33 +95,41 @@ const Board = (props) => {
         );
         // console.log(jsonResponse.board)
       });
-      setStatusText("")
+    setStatusText("");
   };
 
   return (
     <>
       <div>
         <p className="timer">Elapsed Time :... seconds</p>
-        <div className="board">
-          {board.map((row, i) =>
-            row.map((number, j) => {
-              return (
-                <Cell
-                  key={`cell-${i}-${j}`}
-                  isInitial={initial[i][j]}
-                  number={number}
-                  onchange={(newNumber) => {
-                    board[i][j] = newNumber;
-                    setNumber({ board: newNumber });
-                  }}
-                />
-              );
-            })
-          )}
+        <div className="App">
+          <div className="board">
+            {board.map((row, i) =>
+              row.map((number, j) => {
+                return (
+                  <Cell
+                    key={`cell-${i}-${j}`}
+                    isInitial={initial[i][j]}
+                    number={number}
+                    onchange={(newNumber) => {
+                      board[i][j] = newNumber;
+                      setNumber({ board: newNumber });
+                    }}
+                  />
+                );
+              })
+            )}
+          </div>
+          <div className={{ textAlign: "center" }}>
+            <button className="restart-button" onClick={restartBoard}>
+              Reset
+            </button>
+
+            <button onClick={submit}>Submit</button>
+
+            <p>{statusText}</p>
+          </div>
         </div>
-        <button className="restart-button" onClick={restartBoard}>Reset</button>
-        <button onClick={submit}>Submit</button>
-        <p>{statusText}</p>
       </div>
     </>
   );

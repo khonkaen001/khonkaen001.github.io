@@ -15,3 +15,11 @@ const number = ["1","2","3"]
 ```
 
 
+ต่อ String โดยใช้ concat() Method 
+
+```js
+let text1 = "kong";
+let text2 = "rang";
+let result = text1.concat(text2);
+```
+

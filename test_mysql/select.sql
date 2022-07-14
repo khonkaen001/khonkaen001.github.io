@@ -11,3 +11,6 @@ SELECT id , name, price FROM product ORDER BY price  DESC;
 SELECT DISTINCT name FROM product ORDER BY name;
 
 SELECT * FROM product LIMIT 3;
+
+SELECT 
+

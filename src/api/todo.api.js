@@ -6,6 +6,7 @@ const fetchTodo = async () => {
   let data = await axios
     .get("https://jsonplaceholder.typicode.com/todos?_limit=4")
     .then((res) => {
+      console.log(res.data)
       return res.data
     });
     return data
