@@ -8,4 +8,4 @@ jobs:
       - uses: snow-actions/line-notify@v1.0.0 #? lib ของไลน์
         with: # ? ตัวแปรที่ต้องส่ง
           access_token: FKdAHdNfGVWd4HKO7jikqc7tdgrAUDOH1f1024RaFkD
-          message: 🎉 อัพงานสำเร็จ 🎉
+          message: 🎉 อัปงานสำเร็จ 🎉

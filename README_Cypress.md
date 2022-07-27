@@ -40,3 +40,12 @@
 - การส้าง spec ครั้งแรก ระบบจะให้เลือกว่า ต้องการตัวอย่างไหม หรือ ไฟล์ว่าง
 
 <img src="./src/cypressimage/Screenshot 2022-07-21 114914.png" style="width:700px;">
+
+- ตัวอย่างหน้า Dashboard พร้อม Test ของ Cypress 
+
+<img src="./src/cypressimage/Screenshot 2022-07-22 153005.png" style="width:700px;">
+
+
+- ภายในโปรเจคก็จะมีคำสั่งที่เราเขียน เพื่อทดสอบระบบ
+
+<img src="./src/cypressimage/Screenshot 2022-07-22 153425.png" style="width:700px;">
