@@ -105,3 +105,23 @@ button {
   color: #444;
   margin-right: 20px;
 }
+
+.manu-nav {
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+}
+
+.manu-nav a {
+  float: left;
+  color: #5f6368;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.manu-nav a:hover {
+  color:black;
+}
